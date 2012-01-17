@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Istok+Web:400,700);
+
+/* ==|== primary styles =====================================================
+   Author: Beau Simensen <beau@offloc.com>
+   ========================================================================== */
+
+/*
+Base colors:
+Blue 0e2e55
+Fonts:
+http://www.google.com/webfonts#ReviewPlace:refine/Collection:Puritan|Lato:400,900|Istok+Web|PT+Sans+Caption|Play
+*/
+
+a {
+    color: #234e85;
+}
+
+a:visited {
+    color: #305889;
+}
+
+body {
+    font-size: 1em;
+    color: #386196;
+    font-family: arial, sans-serif;
+    background-image: url(bg.png);
+}
+
+header.site,
+footer.site,
+.mainContent {
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 .25em;
+}
+
+.companyTextInfo {
+    vertical-align: middle;
+}
+
+.companyLogo a {
+    display: block;
+    text-indent: -2000px;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    background: url(logo-small.png);
+    width: 110px;
+    height: 120px;
+
+    /*
+    background: url(logo-full.png);
+    width: 320px;
+    height: 81px;
+    */
+}
+
+.company {
+    font-size: 1em;
+    padding: .25em;
+}
+.companyTextInfo {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    padding: 0 .5em;
+}
+.companyName {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #0e2e57;
+}
+
+.companyDescription p {
+    margin: .5em 0;
+    font-size: .75em;
+}
+
+.forkMeOnGithub img {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+}
+
+.mainContent {
+    border-bottom: 1px solid #386196;
+}
+
+footer.site {
+    text-align: center;
+    font-size: .75em;
+    color: rgba(56,97,150, .5);
+    padding-top: 1em;
+}
+
+
+.rgba .mainContent {
+    border-bottom-color: rgba(56,97,150, .25);
+}
+
+.rgba .mainContent {
+    text-shadow: 1px 1px 2px rgba(25, 25, 25, .25);
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+    .companyLogo,
+    .companyTextInfo {
+        display: table-cell;
+    }
+    .companyLogo a {
+        background: url(logo-medium.png);
+        width: 150px;
+        height: 164px;
+    }
+    .companyName {
+        font-size: 1.5em;
+    }
+    .companyDescription p {
+        margin: .5em 0;
+        font-size: .6em;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 480px) and (min-height: 480px) {
+    .company {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .forkMeOnGithub img {
+        max-width: 149px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header.site,
+    footer.site,
+    .mainContent {
+        max-width: 768px;
+    }
+    .company {
+        font-size: 1.5em;
+    }
+    .companyLogo a {
+        background: url(logo.png);
+        width: 220px;
+        height: 240px;
+    }
+    .companyName {
+        font-size: 1.75em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header.site,
+    footer.site,
+    .mainContent {
+        max-width: 1024px;
+    }
+    .company {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .companyLogo a {
+        background-image: url(logo-small@2x.png);
+        background-size: 110px 120px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px) {
+    .companyLogo a {
+        background-image: url(logo-medium@2x.png);
+        background-size: 150px 164px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .companyLogo a {
+        background-image: url(logo@2x.png);
+        background-size: 220px 240px;
+    }
+}
