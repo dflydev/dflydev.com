@@ -1,5 +1,6 @@
 
 require 'yaml'
+require 'deep_merge'
 
 # Load default configuration
 config_file = File.expand_path "sculpin.yml.dist"
@@ -7,7 +8,7 @@ config = YAML::load(File.open(config_file))
 
 # Load local configuration (if it exists)
 localconfig_file = File.expand_path "sculpin.yml"
-config.merge! YAML::load(File.open(localconfig_file)) if File.exists?(localconfig_file)
+config.deep_merge! YAML::load(File.open(localconfig_file)) if File.exists?(localconfig_file)
 
 preview_root          = config['preview_destination']
 preview_url           = config['preview_url']
