@@ -1,6 +1,4 @@
 title: Dragonfly Development (dflydev)
-source: source
-destination: public
 preview_destination: preview
 url: http://dflydev.com
 exclude: ['**/._*']

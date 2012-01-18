@@ -1,19 +1,5 @@
 
 require 'yaml'
-require 'deep_merge'
-
-# Load default configuration
-config_file = File.expand_path "sculpin.yml.dist"
-config = YAML::load(File.open(config_file))
-
-# Load local configuration (if it exists)
-localconfig_file = File.expand_path "sculpin.yml"
-config.deep_merge! YAML::load(File.open(localconfig_file)) if File.exists?(localconfig_file)
-
-preview_root          = config['preview_destination']
-preview_url           = config['preview_url']
-
-deploy_root           = config['destination']
 
 def ok_failed(condition)
   if (condition)
@@ -23,7 +9,25 @@ def ok_failed(condition)
   end
 end
 
-desc "Deploy website"
+dumped_config = ".sculpin.yml.dumped"
+
+# Dump the sculpin configuration to a single merged configuration file.
+ok_failed system "sculpin configuration:dump --to #{dumped_config} --force"
+
+# Parse the dumped config.
+config = YAML::load(File.open(dumped_config))
+
+# Preview stuff is just for this style of Rakefile
+# managed site. We generate the preview in a
+# non-standard destination.
+preview_root          = config['preview_destination']
+preview_url           = config['preview_url']
+
+# The deploy root is the usual Sculpin destination
+# path.
+deploy_root           = config['destination']
+
+desc "Deploy site"
 task :deploy do
 
   deploy_ssh_target     = config['deploy']['ssh']['target']
@@ -39,7 +43,7 @@ task :deploy do
 
 end
 
-desc "Preview website locally"
+desc "Preview site locally"
 task :preview do
     system "sculpin generate --watch --url=#{preview_url} --destination=#{preview_root}"
 end
