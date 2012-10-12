@@ -1,0 +1,4 @@
+framework:
+    secret: nothing
+sculpin:
+    raw: ["css/**"]

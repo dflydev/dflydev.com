@@ -1,4 +1,5 @@
-.sculpin.yml.dumped
-sculpin.yml
-preview
-public
+app/cache/*
+app/config/sculpin_kernel_*.yml
+app/config/sculpin_site_*.yml
+app/logs/*
+output_*

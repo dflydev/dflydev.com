@@ -48,12 +48,6 @@ footer.site,
     background: url(logo-small.png);
     width: 110px;
     height: 120px;
-
-    /*
-    background: url(logo-full.png);
-    width: 320px;
-    height: 81px;
-    */
 }
 
 .company {
@@ -72,8 +66,71 @@ footer.site,
 }
 
 .companyDescription p {
-    margin: .5em 0;
+    margin: .5em 0 1em;
     font-size: .75em;
+}
+
+.who {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.who a {
+    text-decoration: none;
+}
+
+/*
+.who .employee .pic {
+    clear: both;
+}
+.who .employee .pic,
+.who .employee .info {
+    float: left;
+}
+.who .employee .info {
+    margin-left: .5em;
+}
+*/
+.who .employee .pic,
+.who .employee .info {
+    display: inline;
+}
+
+.who .employee .info {
+    vertical-align: top
+}
+.who .employee .name {
+    display: inline-block;
+    font-size: .75em;
+}
+.who .employee ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: .35em;
+    line-height: .75em;
+}
+.who .employee ul li {
+    display: inline-block;
+    margin: 0 .75em 0 0;
+    padding: 0;
+}
+.who .employee ul li a {
+    /*
+    background-color: #386196;
+    padding: .0625em .25em;
+    border-radius: .4em;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(200, 200, 200, .25);
+    */
+}
+.who .employee ul li a i {
+    margin-right: .2em;
+}
+
+.who .employee img {
+    width: 25px;
+    height: 25px;
 }
 
 .forkMeOnGithub img {
@@ -119,7 +176,6 @@ footer.site {
         font-size: 1.5em;
     }
     .companyDescription p {
-        margin: .5em 0;
         font-size: .6em;
         line-height: 1.5em;
     }
@@ -153,6 +209,20 @@ footer.site {
     .companyName {
         font-size: 1.75em;
     }
+    .who {
+        margin-top: 9em;
+    }
+    .who .employee img {
+        width: 50px;
+        height: 50px;
+    }
+    .who .employee .name {
+        font-size: .85em;
+    }
+    .who .employee ul {
+        font-size: .4em;
+        line-height: .85em;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -163,6 +233,20 @@ footer.site {
     }
     .company {
         font-size: 2em;
+    }
+    .who {
+        margin-top: 7em;
+    }
+    .who .employee img {
+        width: 100px;
+        height: 100px;
+    }
+    .who .employee .name {
+        font-size: .95em;
+    }
+    .who .employee ul {
+        font-size: .5em;
+        line-height: .95em;
     }
 }
 
