@@ -1,0 +1,48 @@
+{% extends "base" %}
+{% set parent_link = 'projects' %}
+{% set parent_title = 'Projects' %}
+{% block content %}
+
+<div class="container project">
+    {% if page.logos.large %}
+        <div class="project-logo">
+            <img src="{{ site.url }}/{{ page.logos.large }}">
+        </div>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+
+    {% if page.website %}
+        <div class="project-website">
+            Website: <a href="{{ page.website }}">{{ page.website }}</a>
+        </div>
+    {% endif %}
+    {% if page.github %}
+        <div class="project-github">
+            GitHub: <a href="{{ page.github }}">{{ page.github }}</a>
+        </div>
+    {% endif %}
+    {% if page.twitter %}
+        <div class="project-twitter">
+            Twitter: <a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>
+        </div>
+    {% endif %}
+    <div class="project-description">
+        {% block long_description %}{% endblock %}
+    </div>
+
+    <nav class="other-projects">
+        <hr>
+        {% if page.previous_project %}
+            <div class="previous">
+                <a href="{{ page.previous_project.url }}">&laquo; {{ page.previous_project.title }}</a>
+            </div>
+        {% endif %}
+        {% if page.next_project %}
+            <div class="next">
+                <a href="{{ page.next_project.url }}">{{ page.next_project.title }} &raquo;</a>
+            </div>
+        {% endif %}
+    </nav>
+</div>
+
+{% endblock %}

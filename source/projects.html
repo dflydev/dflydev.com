@@ -1,0 +1,80 @@
+---
+layout: default
+title: Projects
+use:
+    - projects
+
+nav: projects
+
+---
+
+<div class="container projects-header community-projects">
+    <h1>Community Projects</h1>
+    <p>
+        Our team is passionate about giving back to the community. We take part
+        in online discussions, attend conferences, and contribute code. The
+        following is a list of community projects that our team is responsible
+        for or have had a very active role in developing.
+
+        Interested in hiring us? Consider the code and ideas behind these
+        projects as a part of our portfolio.
+    </p>
+    <hr>
+</div>
+
+<div class="container projects">
+    <div class="row">
+        {% for project in data.projects if project.is_featured %}
+            <div class="clearfix project col-md-6 {% if project.is_featured %} featured {% endif %}">
+                {% if project.logos.small %}
+                    <a href="{{ project.url }}">
+                        <div class="project-logo">
+                            <img src="{{ site.url }}/{{ project.logos.small }}">
+                        </div>
+                    </a>
+                {% endif %}
+                <header class="project-name">
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+
+                    {% if project.github %}
+                        <a href="{{ project.github }}"><i class="icon icon-github"></i></a>
+                    {% endif %}
+                    {% if project.twitter %}
+                        <a href="https://twitter.com/{{ project.twitter }}"><i class="icon icon-twitter"></i></a>
+                    {% endif %}
+
+                </header>
+                <div class="project-description">
+                    {{ project.blocks.short_description|raw }}
+                </div>
+
+                {% if project.website %}
+                    <small>
+                        <a href="{{ project.website }}">{{ project.website }}</a>
+                    </small>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <hr>
+    <div class="row non-featured">
+        {% for project in data.projects if not project.is_featured %}
+            <div class="clearfix project col-md-4">
+                <header class="project-name">
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% if project.github %}
+                        <a href="{{ project.github }}"><i class="icon icon-github"></i></a>
+                    {% endif %}
+                    {% if project.website %}
+                        <small>
+                            <a href="{{ project.website }}">{{ project.website }}</a>
+                        </small>
+                    {% endif %}
+                </header>
+                <div class="project-description">
+                    {{ project.blocks.short_description|raw }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

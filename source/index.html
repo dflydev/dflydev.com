@@ -1,0 +1,77 @@
+---
+layout: default
+nav: home
+
+---
+{% block hero %}
+<div class="hero">
+    <div class="container">
+        <div class="logo">
+            <img src="{{ site.url }}/assets/css/logo-medium@2x.png">
+        </div>
+        <div class="meta">
+            <div class="meta-inner">
+                <p class="company-name">
+                    Dragonfly Development
+                </p>
+
+                <p class="company-description">
+                    Dragonfly Development specializes in building software for the web.
+                    We love what we do and
+                    we love making our clients happy. Interested in seeing how we can
+                    work together? <a href="mailto:hello@dflydev.com">Send us an email</a>
+                    and tell us about your project or your team's needs!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="what-we-care-about">
+        <div class="care col-md-4">
+            <header><i class="icon icon-crop"></i> Architecture and Design</header>
+            <div class="description">
+                <p>
+                    An important element of any software project is its underlying architecture and design. Rather than building what you think you want we dig deeply into your domain and use cases with you in order to ensure we build exactly what you need.
+                </p>
+            </div>
+        </div>
+        <div class="care col-md-4">
+            <header><i class="icon icon-puzzle-piece"></i> Framework Agnosticism</header>
+            <div class="description">
+                <p>
+                    Being tied to a framework is technical debt that does not need to accumulate. We can help ensure that more of your business logic remains self-contained so that radical changes to your project in the future will be less painful.
+                </p>
+            </div>
+        </div>
+        <div class="care col-md-4">
+            <header><i class="icon icon-refresh"></i> Workflow</header>
+            <div class="description">
+                <p>
+                    From design to deployment, a solid sustainable workflow is key. We can design and put into place processes and tools to help streamline the continual development, testing, and deployment of your project.
+                </p>
+            </div>
+        </div>
+        <!--
+        <div class="care col-lg-4">
+            <header><i class="icon icon-book"></i> Knowledge</header>
+            <div class="description">
+                <p>
+                    Let us work with your team to learn how to work effectively with the tools your projects need to succeed. Whether through a short speaking session or a hands-on workshop, we can help your team learn exactly what they need to know to succeed.
+                </p>
+            </div>
+        </div>
+        <div class="care col-lg-4">
+            <header><i class="icon icon-group"></i> Community</header>
+            <div class="description">
+                <p>
+                    Our team is passionate about giving back to the community. We take part in online discussions, attend conferences, and contribute code. Make sure to check out our list of community projects to see what kind of work we are doing.
+                </p>
+            </div>
+        </div>
+        -->
+    </div>
+</div>
+{% endblock %}
