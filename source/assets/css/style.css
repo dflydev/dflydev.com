@@ -26,6 +26,10 @@ a:visited {
     color: #666;
 }
 
+a.btn.btn-primary:visited {
+	color: #fff;
+}
+
 body {
     color: #747C86;
     font-family: 'Open Sans', sans-serif;
