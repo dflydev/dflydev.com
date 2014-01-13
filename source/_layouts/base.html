@@ -6,7 +6,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragonfly Development Inc. (dflydev)</title>
+    <title>
+        {% if page.full_title %}
+            {{ page.full_title }}
+        {% elseif page.title %}
+            {{ page.title }} &mdash; Dragonfly Development, Inc (dflydev)
+        {% else %}
+            Dragonfly Development, Inc (dflydev)
+        {% endif %}
+    </title>
     <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" media="screen">
