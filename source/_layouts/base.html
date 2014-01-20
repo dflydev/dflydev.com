@@ -17,7 +17,7 @@
     </title>
     <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-    <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="{{ site.url }}/assets/css/style.css?v={{ site.assets_version }}" rel="stylesheet" media="screen">
     <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body class="{% if page.nav %}page-nav-{{ page.nav }}{% else %}page-nav-none{% endif %}">
@@ -44,7 +44,7 @@
         <footer class="site">
             <div class="banner">
                 <div class="container">
-                    Want to start working with us? <a class="btn btn-primary btn-lg" href="{{ site.url }}/contact/">Contact Us Today!</a>
+                    Want to get inspired? <a class="btn btn-primary btn-lg" href="{{ site.url }}/contact/">Contact Us Today!</a>
                 </div>
             </div>
             <div class="bottom">

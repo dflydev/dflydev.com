@@ -467,6 +467,17 @@ form.validate .form-group:not(.has-error) .help-block {
 	#whole-page-content-container {
 	    padding-bottom: 18em;
 	}
+	form.validate.form-inline input:not(.btn) {
+		margin-bottom: 2.5em;
+	}
+
+	form.validate.form-inline input.btn {
+		margin-bottom: 2em;
+	}
+
+	form.validate.form-inline .has-error input.required {
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (min-width: 992px) {
