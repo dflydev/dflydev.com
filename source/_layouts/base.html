@@ -65,9 +65,28 @@
     <script>window.jQuery || document.write('<script src="{{site.url}}/components/jquery/jquery.min.js"><\/script>')</script>
     <script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
     <script>
-    $('.menu-full').on('hidden.bs.collapse', function (e) {
-        $(this).closest('.navbar').find('.navbar-toggle').blur();
-    });
+        $(function () {
+            $('.menu-full').on('hidden.bs.collapse', function (e) {
+                $(this).closest('.navbar').find('.navbar-toggle').blur();
+            });
+            $('form.validate').on('submit', function (e) {
+                var isValid = true;
+
+                var $form = $(this);
+                $form.find('input.required').each(function() {
+                    var $field = $(this);
+
+                    if ($.trim($field.val()).length == 0){
+                        $field.closest('.form-group').addClass('has-error');
+                        isValid = false;
+                    } else {
+                        $field.closest('.form-group').removeClass('has-error');
+                    }
+                });
+
+                return isValid;
+            });
+        });
     </script>
     {% if site.google_analytics_tracking_id %}
       <script>

@@ -179,11 +179,13 @@ header.site {
 	float: left;
 }
 
+.contact-methods .contact-method,
 .container.projects .project,
 .what-we-care-about .care {
 	margin-top: 2.5em;
 }
 
+.contact-methods .contact-method header,
 .container.projects .project header,
 .what-we-care-about .care header {
 	font-size: 1.25em;
@@ -191,6 +193,7 @@ header.site {
 	font-weight: 600;
 }
 
+.contact-methods .contact-method header small,
 .container.projects .project header small,
 .what-we-care-about .care header small {
 	font-size: .75em;
@@ -202,15 +205,30 @@ header.site {
 }
 .container.services,
 .container.project .project-description,
+.contact-methods .contact-method .description,
 .container.projects .project .project-description,
 .what-we-care-about .care .description {
 	line-height: 1.75em;
 }
 
+.contact-methods .contact-method header i,
 .what-we-care-about .care header i {
 	margin-right: .25em;
 }
 
+.contact-methods .contact-method .cta {
+	margin: 2em 0;
+}
+
+.why-one-hour-free {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin-top: 3em;
+}
+
+.why-one-hour-free h2 {
+	margin: .5em 0;
+}
 
 .container.projects .project-logo {
 	float: right;
@@ -327,6 +345,10 @@ nav.other-projects .previous {
 }
 nav.other-projects .next {
 	float: right;
+}
+
+form.validate .form-group:not(.has-error) .help-block {
+	display: none;
 }
 
 @media only screen and (min-width: 480px) {
@@ -476,6 +498,9 @@ nav.other-projects .next {
 	}
 	#whole-page-content-container {
 	    padding-bottom: 20em;
+	}
+	.why-one-hour-free {
+		margin-top: 0;
 	}
 }
 
