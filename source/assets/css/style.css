@@ -103,22 +103,8 @@ footer.site .social-media {
 }
 
 
-.site-nav-container {
-	background-image: url("seattle-rain-bg.jpg");
-	background-size: cover;
-
-	background-position: center top;
-}
-
 body:not(.page-nav-home) .site-nav-container {
 	margin-bottom: 35px;
-}
-
-header.site {
-	/*
-	background-image: url("seattle-rain-bg.jpg");
-	background-size: cover;
-	*/
 }
 
 .navbar.navbar-default {
@@ -133,8 +119,18 @@ header.site {
 .hero {
 	padding: 2.5em 1em 1em;
 	border-bottom: 2px solid #747C86;
+}
+
+.hero,
+.hero-header,
+footer.site .contact-us-wrapper {
 	color: #eee;
 	text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+}
+
+.hero a:visited,
+.hero-header a:visited {
+	color: #eee;
 }
 
 .hero .container {
@@ -287,19 +283,73 @@ footer.site .banner .btn {
 
 footer.site .banner,
 .hero-header {
-	background-color: #eee;
 	border-top: 1px solid #747C86;
 	border-bottom: 1px solid #747C86;
 }
 
+.site-nav-container,
+footer.site .banner {
+	background-size: cover;
+	background-position: center top;
+}
+
+
+.page-artwork-none .site-nav-container {
+	background-image: url("seattle-rain-bg.jpg");
+}
+.page-artwork-none footer.site .banner {
+	background-image: url(ninjagrl-music-top.jpg);
+}
+
+.page-artwork-ninjagrl-music .site-nav-container {
+	background-image: url(ninjagrl-music-top.jpg);
+}
+.page-artwork-ninjagrl-music footer.site .banner {
+	background-image: url(ninjagrl-music-bottom.jpg);
+}
+
+
+.foo .site-nav-container {
+	background-image: url("seattle-rain-bg.jpg");
+	/*background-image: url("ninjagrl-music-top.jpg");*/
+	/*background-image: url("tonytaj-skyline-alpha-top.jpg");*/
+	/*background-image: url("tonytaj-summer-in-the-city-top.jpg");*/
+	background-size: cover;
+
+	background-position: center top;
+}
+
+.foo footer.site .banner {
+	background-image: url(seattle-rain-bg-bottom.jpg);
+	/*background-image: url(ninjagrl-music-bottom.jpg);*/
+	/*background-image: url(tonytaj-skyline-alpha-bottom.jpg);*/
+	/*background-image: url(tonytaj-summer-in-the-city-bottom.jpg);*/
+	background-size: cover;
+	background-position: top;
+}
+
+
 .hero-header h1 {
 	margin: 1em 0;
-	color: #747C86;
+	color: #eee;
 	font-size: 2em;
 	font-weight: normal;
+	border-radius: .25em;
+	padding: .25em .5em;
+	background-color: rgba(50, 50, 50, .25);
+	display: inline-block;
 }
+
 .hero-header h1 a {
 	font-weight: bold;
+}
+
+footer.site .contact-us-wrapper {
+	color: #eee;
+	border-radius: .25em;
+	padding: .5em 1em;
+	background-color: rgba(50, 50, 50, .25);
+	display: inline-block;
 }
 
 .container hr {
@@ -326,7 +376,7 @@ footer.site .banner,
 	margin-bottom: 3em;
 }
 
-body.page-nav-none footer.site .banner {
+body.page-nav-contact footer.site .banner {
 	display: none;
 }
 
@@ -339,6 +389,7 @@ body.page-nav-none footer.site .banner {
 
 nav.other-projects {
 	margin-top: 3em;
+	padding-bottom: 10em;
 }
 
 nav.other-projects .previous {

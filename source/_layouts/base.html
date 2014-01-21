@@ -20,20 +20,22 @@
     <link href="{{ site.url }}/assets/css/style.css?v={{ site.assets_version }}" rel="stylesheet" media="screen">
     <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body class="{% if page.nav %}page-nav-{{ page.nav }}{% else %}page-nav-none{% endif %}">
+<body class="{% if page.nav %}page-nav-{{ page.nav }}{% else %}page-nav-none{% endif %} {% if page.artwork %}page-artwork-{{ page.artwork }}{% else %}page-artwork-none{% endif %}">
     <div id="whole-page-container">
         <div class="site-nav-container">
             {% include "primary_nav" %}
             {% block hero %}
                 <div class="hero-header">
-                    <div class="container">
-                        <h1>
-                            {% if parent_link is defined %}
-                            <a href="{{ site.url }}/{{ parent_link }}">{{ parent_title }}</a>
-                            /
-                            {% endif %}
-                            {{ page.title }}
-                        </h1>
+                    <div class="banner">
+                        <div class="container">
+                            <h1>
+                                {% if parent_link is defined %}
+                                <a href="{{ site.url }}/{{ parent_link }}">{{ parent_title }}</a>
+                                /
+                                {% endif %}
+                                {{ page.title }}
+                            </h1>
+                        </div>
                     </div>
                 </div>
             {% endblock %}
@@ -41,10 +43,12 @@
         <div id="whole-page-content-container">
             {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
         </div>
-        <footer class="site">
+        <footer class="site clearfix">
             <div class="banner">
                 <div class="container">
-                    Want to get inspired? <a class="btn btn-primary btn-lg" href="{{ site.url }}/contact/">Contact Us Today!</a>
+                    <div class="contact-us-wrapper">
+                        Want to get inspired? <a class="btn btn-primary btn-lg" href="{{ site.url }}/contact/">Contact Us Today!</a>
+                    </div>
                 </div>
             </div>
             <div class="bottom">
