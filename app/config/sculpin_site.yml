@@ -1,1 +1,22 @@
 assets_version: 2
+artists:
+    ninjagrl:
+        name: ninjagrl
+        url: http://ninjagrl.com
+    tonytaj:
+        name: Tony Taj
+        url: http://tonytaj.com
+artworks:
+    default:
+        by: ninjagrl
+        title: '"seattle skyline" photograph'
+        symlink: ninjagrl-seattle
+    ninjagrl-music:
+        by: ninjagrl
+        title: '"sets in its place each dainty dish"'
+        symlink: ninjagrl-music
+    tonytaj-summer-in-the-city:
+        by: tonytaj
+        title: '"Summer Fun in the City"'
+        symlink: tonytaj-summer-fun-in-the-city
+        url: http://tonytaj.com/30jizvwhioft19x693hsbq3oc3fppd

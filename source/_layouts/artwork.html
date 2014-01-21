@@ -1,0 +1,28 @@
+{% extends "base" %}
+{% block content_wrapper %}
+
+<div class="container artwork">
+    <img src="{{ site.url }}/{{ page.image }}" class="img-responsive">
+    <h1>{{ page.title }}
+        <small>by <a href="{{ site.artists[page.artist].url }}">{{ site.artists[page.artist].name }}</a></small>
+    </h1>
+    {% block content %}{% endblock %}
+
+    <nav class="other-artwork">
+        <hr>
+        {% if page.previous_artwork %}
+            <div class="previous">
+                <a href="{{ page.previous_artwork.url }}">&laquo; {{ page.previous_artwork.title }}</a>
+            </div>
+        {% endif %}
+        {% if page.next_artwork %}
+            <div class="next">
+                <a href="{{ page.next_artwork.url }}">{{ page.next_artwork.title }} &raquo;</a>
+            </div>
+        {% endif %}
+    </nav>
+
+</div>
+{% endblock %}
+{% block hero %}
+{% endblock %}

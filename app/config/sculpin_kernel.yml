@@ -1,2 +1,5 @@
 sculpin_content_types:
     projects:
+    artworks:
+        path: artwork
+        permalink: pretty

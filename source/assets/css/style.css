@@ -128,6 +128,8 @@ footer.site .contact-us-wrapper {
 	text-shadow: 1px 1px 2px rgba(0,0,0,.75);
 }
 
+.hero a,
+.hero-header a,
 .hero a:visited,
 .hero-header a:visited {
 	color: #eee;
@@ -300,7 +302,7 @@ footer.site .banner {
 	background-image: url("seattle-rain-bg.jpg");
 }
 .page-artwork-none footer.site .banner {
-	background-image: url(ninjagrl-music-top.jpg);
+	background-image: url(seattle-rain-bg-bottom.jpg);
 }
 
 .page-artwork-ninjagrl-music .site-nav-container {
@@ -329,6 +331,18 @@ footer.site .banner {
 }
 .page-artwork-tonytaj-wave-configuration footer.site .banner {
 	background-image: url(tonytaj-wave-configuration-bottom.jpg);
+}
+
+.page-artwork-showcase .site-nav-container {
+	background-color: #333;
+}
+.page-artwork-showcase footer.site .banner {
+	background-color: #333;
+}
+
+.container.artwork {
+	margin-top: 5em;
+	margin-bottom: 2em;
 }
 
 .hero-header h1 {
@@ -390,14 +404,17 @@ footer.site .contact-us-wrapper {
 	padding-bottom: 10em;
 }
 
+nav.other-artwork,
 nav.other-projects {
 	margin-top: 3em;
 	padding-bottom: 10em;
 }
 
+nav.other-artwork .previous,
 nav.other-projects .previous {
 	float: left;
 }
+nav.other-artwork .next,
 nav.other-projects .next {
 	float: right;
 }
@@ -407,6 +424,13 @@ form.validate .form-group:not(.has-error) .help-block {
 }
 
 .whole-page-content-container-inside {
+}
+
+.artwork-attribution {
+	position: absolute;
+	right: 0;
+	margin: .5em 1em;
+	font-size: .75em;
 }
 
 @media only screen and (min-width: 480px) {
