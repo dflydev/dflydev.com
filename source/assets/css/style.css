@@ -175,7 +175,7 @@ header.site {
 	margin-bottom: 5em;
 }
 .what-we-care-about {
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 	float: left;
 }
 
@@ -319,6 +319,7 @@ footer.site .banner,
 }
 .container.services .service-detail {
 	margin: 2em 0;
+	clear: both;
 }
 
 .container.services {
