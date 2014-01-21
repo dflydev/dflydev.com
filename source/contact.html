@@ -4,7 +4,7 @@ title: Contact
 nav: contact
 
 ---
-
+{% block content %}
 <div class="container contact-us">
     <h1>How Can We Inspire You?</h1>
 
@@ -99,3 +99,7 @@ nav: contact
         </div>
     </div>
 </div>
+{% endblock %}
+{% block footer_cta %}
+    Have you seen our projects? <a class="btn btn-primary btn-lg" href="{{ site.url }}/projects/">See What We've Done!</a>
+{% endblock %}

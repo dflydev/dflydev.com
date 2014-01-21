@@ -281,9 +281,11 @@ footer.site .banner .btn {
 	border-top: none;
 }
 
-footer.site .banner,
-.hero-header {
+footer.site .banner {
 	border-top: 1px solid #747C86;
+}
+
+.hero-header {
 	border-bottom: 1px solid #747C86;
 }
 
@@ -376,10 +378,6 @@ footer.site .contact-us-wrapper {
 	margin-bottom: 3em;
 }
 
-body.page-nav-contact footer.site .banner {
-	display: none;
-}
-
 .btn .primary {
 	display: none;
 }
@@ -387,7 +385,8 @@ body.page-nav-contact footer.site .banner {
 	display: block;
 }
 
-.container.newsletter {
+.container.newsletter,
+.container.contact-us {
 	padding-bottom: 10em;
 }
 
