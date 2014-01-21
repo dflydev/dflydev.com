@@ -308,26 +308,26 @@ footer.site .banner {
 	background-image: url(ninjagrl-music-bottom.jpg);
 }
 
-
-.foo .site-nav-container {
-	background-image: url("seattle-rain-bg.jpg");
-	/*background-image: url("ninjagrl-music-top.jpg");*/
-	/*background-image: url("tonytaj-skyline-alpha-top.jpg");*/
-	/*background-image: url("tonytaj-summer-in-the-city-top.jpg");*/
-	background-size: cover;
-
-	background-position: center top;
+.page-artwork-tonytaj-summer-in-the-city .site-nav-container {
+	background-image: url(tonytaj-summer-in-the-city-top.jpg);
+}
+.page-artwork-tonytaj-summer-in-the-city footer.site .banner {
+	background-image: url(tonytaj-summer-in-the-city-bottom.jpg);
 }
 
-.foo footer.site .banner {
-	background-image: url(seattle-rain-bg-bottom.jpg);
-	/*background-image: url(ninjagrl-music-bottom.jpg);*/
-	/*background-image: url(tonytaj-skyline-alpha-bottom.jpg);*/
-	/*background-image: url(tonytaj-summer-in-the-city-bottom.jpg);*/
-	background-size: cover;
-	background-position: top;
+.page-artwork-tonytaj-skyline-alpha .site-nav-container {
+	background-image: url(tonytaj-skyline-alpha-top.jpg);
+}
+.page-artwork-tonytaj-skyline-alpha footer.site .banner {
+	background-image: url(tonytaj-skyline-alpha-bottom.jpg);
 }
 
+.page-artwork-tonytaj-wave-configuration .site-nav-container {
+	background-image: url(tonytaj-wave-configuration-top.jpg);
+}
+.page-artwork-tonytaj-wave-configuration footer.site .banner {
+	background-image: url(tonytaj-wave-configuration-bottom.jpg);
+}
 
 .hero-header h1 {
 	margin: 1em 0;
@@ -387,6 +387,10 @@ body.page-nav-contact footer.site .banner {
 	display: block;
 }
 
+.container.newsletter {
+	padding-bottom: 10em;
+}
+
 nav.other-projects {
 	margin-top: 3em;
 	padding-bottom: 10em;
@@ -401,6 +405,9 @@ nav.other-projects .next {
 
 form.validate .form-group:not(.has-error) .help-block {
 	display: none;
+}
+
+.whole-page-content-container-inside {
 }
 
 @media only screen and (min-width: 480px) {

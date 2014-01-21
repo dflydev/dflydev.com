@@ -41,7 +41,9 @@
             {% endblock %}
         </div>
         <div id="whole-page-content-container">
-            {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+            <div class="whole-page-content-container-inside">
+                {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+            </div>
         </div>
         <footer class="site clearfix">
             <div class="banner">
