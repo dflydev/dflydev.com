@@ -423,7 +423,7 @@ form.validate .form-group:not(.has-error) .help-block {
 	display: none;
 }
 
-.whole-page-content-container-inside a {
+.whole-page-content-container-inside p a:not(.btn) {
 	text-decoration: underline;
 }
 
