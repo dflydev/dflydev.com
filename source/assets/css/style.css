@@ -423,7 +423,12 @@ form.validate .form-group:not(.has-error) .help-block {
 	display: none;
 }
 
-.whole-page-content-container-inside {
+.whole-page-content-container-inside a {
+	text-decoration: underline;
+}
+
+.well p:last-of-type {
+	margin-bottom: 0;
 }
 
 .artwork-attribution {

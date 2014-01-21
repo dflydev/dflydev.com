@@ -30,6 +30,14 @@
         {% block long_description %}{% endblock %}
     </div>
 
+
+    {% set _project_cta = block('project_cta') %}
+    {% if _project_cta is not empty %}
+        <div class="project-cta well">
+            {{ _project_cta|raw }}
+        </div>
+    {% endif %}
+
     <nav class="other-projects">
         <hr>
         {% if page.previous_project %}
