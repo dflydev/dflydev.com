@@ -481,8 +481,9 @@ form.validate .form-group:not(.has-error) .help-block {
 	}
 
 	footer.site .banner .btn {
-		display: inline;
+		display: inline-block;
 		margin-left: .5em;
+		margin-bottom: 0.1875em;
 	}
 	#whole-page-content-container {
 	    padding-bottom: 13em;
