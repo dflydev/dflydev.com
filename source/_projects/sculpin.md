@@ -33,7 +33,7 @@ If your project doesn't actually need to be dynamically generated on every page 
 
 We wrote Sculpin because we wanted to fix some issues we had with Jekyll. We chose PHP because we are comfortable with it. Since then we've used Sculpin to build literally dozens of sites, [including the one you are visiting now](https://github.com/dflydev/dflydev.com).
 
-Sculpin is a member project of the [PHP Framework Interop Group](http://www.php-fig.org/). We are serious about making Sculpin a tool that your business can rely on.
+Sculpin is a member project of the [PHP Framework Interoperability Group](http://www.php-fig.org/) so you can know that we are serious about making Sculpin a tool that your business can rely on.
 
 {% endblock %}
 
