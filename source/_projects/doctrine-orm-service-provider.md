@@ -17,9 +17,9 @@ Provides Doctrine ORM Entity Managers as services to Pimple applications.
 {% endblock %}
 {% block long_description %}
 
-Provides Doctrine ORM Entity Managers as services to
-[Pimple](http://pimple.sensiolabs.org/) applications. Adapters are provided for
-both [Silex](http://silex.sensiolabs.org/) and [Cilex](http://cilex.github.io/).
+> Provides Doctrine ORM Entity Managers as services to
+> [Pimple](http://pimple.sensiolabs.org/) applications. Adapters are provided for
+> both [Silex](http://silex.sensiolabs.org/) and [Cilex](http://cilex.github.io/).
 
 If you are not familiar with Doctrine ORM, it is a high quality Object
 Relational Mapper (ORM) for PHP. It sits on top of a powerful database
