@@ -1,5 +1,5 @@
 ---
-title: '"seattle skyline"'
+title: '"puget sound" photograph'
 artist: ninjagrl
 image: assets/artwork/ninjagrl-seattle-cropped.jpg
 artwork: showcase

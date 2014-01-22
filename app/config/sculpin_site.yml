@@ -9,7 +9,7 @@ artists:
 artworks:
     default:
         by: ninjagrl
-        title: '"seattle skyline" photograph'
+        title: '"puget sound" photograph'
         symlink: ninjagrl-seattle
     ninjagrl-music:
         by: ninjagrl
