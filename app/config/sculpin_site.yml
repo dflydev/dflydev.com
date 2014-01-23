@@ -1,4 +1,5 @@
-assets_version: 3
+assets_version: 4
+default_artwork: ninjagrl-seattle
 artists:
     ninjagrl:
         name: ninjagrl
@@ -7,7 +8,7 @@ artists:
         name: Tony Taj
         url: http://tonytaj.com
 artworks:
-    default:
+    ninjagrl-seattle:
         by: ninjagrl
         title: '"puget sound" photograph'
         symlink: ninjagrl-seattle

@@ -1,4 +1,3 @@
-{% if page.artwork %}{% set artwork %}{{ page.artwork }}{% endset %}{% else %}{% set artwork %}default{% endset %}{% endif %}
 {% set artist %}{{ site.artworks[artwork].by }}{% endset %}
 {% if site.artworks[artwork] %}
     <div class="artwork-attribution">

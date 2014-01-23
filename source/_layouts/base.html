@@ -20,7 +20,7 @@
     <link href="{{ site.url }}/assets/css/style.css?v={{ site.assets_version }}" rel="stylesheet" media="screen">
     <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
-{% if not artwork %}{% set artwork %}{{ page.artwork }}{% endset %}{% endif %}
+{% if not artwork %}{% if page.artwork %}{% set artwork %}{{ page.artwork }}{% endset %}{% else %}{% set artwork %}{{ site.default_artwork }}{% endset %}{% endif %}{% endif %}
 <body class="{% if page.nav %}page-nav-{{ page.nav }}{% else %}page-nav-none{% endif %} {% if artwork %}page-artwork-{{ artwork }}{% else %}page-artwork-none{% endif %}">
     <div id="whole-page-container">
         <div class="site-nav-container">
