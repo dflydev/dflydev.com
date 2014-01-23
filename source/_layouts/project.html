@@ -1,13 +1,19 @@
 {% extends "base" %}
+{% if not page.no_parents %}
 {% set parent_link = 'projects' %}
 {% set parent_title = 'Projects' %}
+{% endif %}
 {% set artwork = 'tonytaj-summer-in-the-city' %}
 {% block content %}
 
 <div class="container project">
     {% if page.logos.large %}
         <div class="project-logo">
-            <img src="{{ site.url }}/{{ page.logos.large }}">
+            {% if page.logos.large starts with 'http' or page.logos.large starts with '//' %}
+                <img src="{{ page.logos.large }}">
+            {% else %}
+                <img src="{{ site.url }}/{{ page.logos.large }}">
+            {% endif %}
         </div>
     {% endif %}
     <h1>{{ page.title }}</h1>
