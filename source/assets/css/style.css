@@ -125,6 +125,12 @@ body:not(.page-nav-home) .site-nav-container {
 .hero-header,
 footer.site .contact-us-wrapper {
 	color: #eee;
+}
+
+.navbar.navbar-default,
+.hero,
+.hero-header,
+footer.site .contact-us-wrapper {
 	text-shadow: 1px 1px 2px rgba(0,0,0,.75);
 }
 
@@ -310,6 +316,13 @@ footer.site .banner {
 }
 .page-artwork-ninjagrl-music footer.site .banner {
 	background-image: url(ninjagrl-music-bottom.jpg);
+}
+
+.page-artwork-johnosgood-sitka-pt3 .site-nav-container {
+	background-image: url(johnosgood-sitka-pt3-top.jpg);
+}
+.page-artwork-johnosgood-sitka-pt3 footer.site .banner {
+	background-image: url(johnosgood-sitka-pt3-bottom.jpg);
 }
 
 .page-artwork-tonytaj-summer-in-the-city .site-nav-container {
