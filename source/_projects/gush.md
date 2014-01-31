@@ -27,7 +27,7 @@ Our primary contribution to Gush was in helping to shape the core branding for t
 
 We started by thinking about what the product *did* and *why people would want to use it*. After a few discussions with Luis it became clear that this was all about helping to manage the workflow for both maintainers and users of open source projects.
 
-We ended up suggesting several names but "Gush" stood out for several reasons. One important reason was that the name had urgency and speed connotations with it while still relating to "flow." Another important reason was that it was super short and approachable.
+We ended up suggesting several names but "Gush" really stood out. The name had urgency and speed connotations with it while still relating to "flow." It was also super short and approachable. Wins all around.
 
 From this we expanded on the existing ideas for a tagline and ended up with "Rapid workflow for project maintainers and contributors."
 
