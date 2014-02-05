@@ -451,6 +451,25 @@ form.validate .form-group:not(.has-error) .help-block {
 	font-size: .75em;
 }
 
+.headshot-wrapper {
+	background-color: #ccc;
+	border: 1em solid #eee;
+	border-radius: 50%;
+	overflow: hidden;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.headshot-wrapper .headshot {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+}
+.headshot-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
 @media only screen and (min-width: 480px) {
 	footer.site .copyright {
 		float: left;
@@ -509,6 +528,12 @@ form.validate .form-group:not(.has-error) .help-block {
 	}
 	.btn .secondary {
 		display: none;
+	}
+
+	.headshot-wrapper {
+		float: right;
+		margin: 3em 0 1em 1em;
+		max-width: 300px;
 	}
 }
 
