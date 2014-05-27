@@ -470,6 +470,27 @@ form.validate .form-group:not(.has-error) .help-block {
 	height: auto;
 }
 
+.services .panel {
+	text-align: center;
+}
+
+.services .panel h2 {
+	font-size: 2em;
+	margin: .25em 0 0;
+}
+
+.services .panel-body {
+	padding: 0;
+}
+
+.services table {
+	margin-bottom: 0;
+}
+
+.services table.table > tbody > tr > td {
+	border-top-width: 0;
+}
+
 @media only screen and (min-width: 480px) {
 	footer.site .copyright {
 		float: left;
