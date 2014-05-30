@@ -39,6 +39,6 @@ Sculpin is a member project of the [PHP Framework Interoperability Group](http:/
 
 {% block project_cta %}
 
-Are you worried about whether your site can handle going viral? Do you think that going static might be an option? Not sure? [Contact us]({{site.url}}/contact/) for a <strong>free one hour consultation</strong> to see if going static makes sense for your business.
+Are you worried about whether your site can handle going viral? Do you think that going static might be an option? Not sure? [Contact us]({{site.url}}/contact/) for a <strong>free 30 minute consultation</strong> to see if going static makes sense for your business.
 
 {% endblock %}

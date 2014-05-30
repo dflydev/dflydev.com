@@ -39,6 +39,6 @@ Luis also asked us to help create the foundation for [gushphp.org](http://gushph
 
 {% block project_cta %}
 
-Are you looking for someone to work on your project that wants to do more for your business than just receive your requirements and crank out code? [Contact us]({{site.url}}/contact/) for a <strong>free one hour consultation</strong> to see what things we can do for you above and beyond "just programming."
+Are you looking for someone to work on your project that wants to do more for your business than just receive your requirements and crank out code? [Contact us]({{site.url}}/contact/) for a <strong>free 30 minutes consultation</strong> to see what things we can do for you above and beyond "just programming."
 
 {% endblock %}
