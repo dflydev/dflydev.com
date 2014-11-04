@@ -3,3 +3,4 @@ sculpin_content_types:
     artworks:
         path: artwork
         permalink: pretty
+    landings:

@@ -1,0 +1,30 @@
+{% extends "base" %}
+{% set artwork = 'tonytaj-summer-in-the-city' %}
+{% block content %}
+<!--
+<section>
+    <div class="container">
+        <h1>{{ page.header }}</h1>
+    </div>
+</section>
+-->
+
+<div class="container landing">
+
+    <div class="landing-description">
+        {% block long_description %}{% endblock %}
+    </div>
+
+    {% set _landing_cta = block('landing_cta') %}
+    {% if _landing_cta is not empty %}
+        <div class="landing-cta well">
+            {{ _landing_cta|raw }}
+        </div>
+    {% endif %}
+
+
+    <hr>
+
+</div>
+
+{% endblock %}
