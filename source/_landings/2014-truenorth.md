@@ -21,11 +21,7 @@ header: Your Problems Solved.
 <p><a href="http://truenorthphp.ca"><img class="landing-image" src="/assets/landings/truenorthphp-logo.png"></a></p>
 
 <p>
-We wish we could be there, too! The <a href="http://truenorthphp.ca/schedule.php">schedule</a> this year looks amazing! Unfortunately we'll have to settle for being there in spirit only this year. And by that of course we mean stickers. :) Grab them before they run out!
-</p>
-
-<p>
-Speaking of stickers, make sure to pick up some <a href="https://sculpin.io">Sculpin</a>, <a href="http://stackphp.org">Stack PHP</a>, and <a href="http://thatpodcast.io">That Podcast</a> stickers, too!
+We wish we could be there, too! The <a href="http://truenorthphp.ca/schedule.php">schedule</a> this year looks amazing! Unfortunately we'll have to settle for being there in spirit only this year.
 </p>
 
 <p>
