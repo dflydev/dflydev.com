@@ -23,7 +23,7 @@ An extensible PHP static site generator.
 
 Are you worried that your business site is going to be brought to its knees by unexpectedly going viral? You should be. Unless you have prepared for it well in advance, many sites crumble under the full force of *really* going viral.
 
-This is one of the big reasons that static site generators seem to be all the rate these days. What business wants to be down for *any* reason exactly when they are getting more traffic than they expected?
+This is one of the big reasons that static site generators seem to be all the rage these days. What business wants to be down for *any* reason exactly when they are getting more traffic than they expected?
 
 Static sites are sites where all of the content is generated in advance of being deployed in production. This means that your production environment typically only needs to include a web server. No other tools are required.
 
