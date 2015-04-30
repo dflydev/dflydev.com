@@ -1,0 +1,24 @@
+{% extends "base" %}
+{% set artwork = 'tonytaj-summer-in-the-city' %}
+{% block content_wrapper %}
+<style>
+.standard_page h1 {
+    font-size: 3em;
+}
+.standard_page h2 {
+    font-size: 2.5em;
+}
+.standard_page h3 {
+    font-size: 2em;
+}
+.standard_page h4 {
+    font-size: 1.5em;
+}
+.standard_page h5 {
+    font-size: 1.25em;
+}
+</style>
+<div class="container standard_page">
+{% block content %}{% endblock %}
+</div>
+{% endblock %}
