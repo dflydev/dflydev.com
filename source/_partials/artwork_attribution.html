@@ -1,8 +1,0 @@
-{% set artist %}{{ site.artworks[artwork].by }}{% endset %}
-{% if site.artworks[artwork] %}
-    <div class="artwork-attribution">
-        <a href="{{ site.url }}/artwork/{{ site.artworks[artwork].symlink }}/">{{ site.artworks[artwork].title }}</a>
-        by
-        <a href="{{ site.url }}/artwork/{{ site.artworks[artwork].symlink }}/">{{ site.artists[artist].name }}</a>
-    </div>
-{% endif %}
