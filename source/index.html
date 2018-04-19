@@ -1,110 +1,30 @@
----
-layout: default
-nav: home
-
----
-{% block hero %}
-<div class="hero">
-    <div class="container">
-        <div class="logo">
-            <img src="{{ site.url }}/assets/css/logo-medium@2x.png">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beau Simensen &middot; Technology Strategy Consultant</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="md:flex mx-auto lg:w-3/4 md:items-center md:h-screen p-4">
+          <div class="float-right md:float-none w-24 sm:w-48 md:w-1/4 px-2 pl-4 pb-4 md:p-0">
+            <img class="w-auto" src="https://avatars0.githubusercontent.com/u/199259?s=400&v=4">
+          </div>
+          <div class="md:w-3/4 px-2">
+            <p class="leading-normal py-1 xl:text-5xl font-thin">
+              Hello!
+            </p>
+            <p class="leading-normal py-1 xl:text-xl font-light">
+              I'm <strong>Dragonfly Development</strong> (aka <strong>dflydev</strong>), <a href="https://beausimensen.com/services">a technology strategy consultancy</a> created by <a rel="me" href="https://beausimensen.com">Beau Simensen</a>.
+              I'm also <a rel="me" href="https://github.com/dflydev">Beau's vendor for open-source software</a>. Other than that, I'm not terribly interesting.
+            </p>
+            <p class="leading-normal py-1 xl:text-xl font-light">
+              Want to <strong>say hello</strong> anyway? <a href="mailto:hello@dflydev.com">Send me an email!</a>
+            </p>
+            <p class="leading-normal py-1 xl:text-xl font-light">
+              Otherwise, <a href="https://beausimensen.com/services">check out the services Beau offers</a> through me.
+            </p>
+          </div>
         </div>
-        <div class="meta">
-            <div class="meta-inner">
-                <p class="company-name">
-                    dflydev
-                </p>
-
-                <p class="company-description">
-                    We <strong>curate solutions</strong> for clients looking for <strong>creative insight</strong> into making their business <strong>more successful</strong>.
-                    Interested in seeing how we can make <strong>your business</strong> more successful? <a href="{{ site.url }}/contact/">Contact us</a> and tell us about your project and your team's needs!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-{% include "artwork_attribution" %}
-{% endblock %}
-{% block content %}
-<div class="container">
-    <div class="what-we-care-about">
-        <div class="care x-col-md-4">
-            <header><i class="icon icon-crop"></i> Architecture and Design</header>
-            <div class="description">
-                <p>
-                    An important element of any software project is its underlying architecture and design. Rather than building what you think you want we dig deeply into your domain and use cases with you in order to ensure we build exactly what you need.
-                </p>
-            </div>
-        </div>
-        <div class="care x-col-md-4">
-            <header><i class="icon icon-puzzle-piece"></i> Framework Agnosticism</header>
-            <div class="description">
-                <p>
-                    Being tied to a framework is technical debt that does not need to accumulate. We can help ensure that more of your business logic remains self-contained so that radical changes to your project in the future will be less painful.
-                </p>
-            </div>
-        </div>
-        <div class="care x-col-md-4">
-            <header><i class="icon icon-refresh"></i> Workflow</header>
-            <div class="description">
-                <p>
-                    From design to deployment, a solid sustainable workflow is key. We can design and put into place processes and tools to help streamline the continual development, testing, and deployment of your project.
-                </p>
-            </div>
-        </div>
-    </div>
-    <hr class="clearfix" style="width: 100%;">
-</div>
-
-
-<div class="container">
-    <div class="x-col-md-12">
-        <h1>Get Connected</h1>
-        <p>
-            The Dispatch is our short-form newsletter. It is our gift to you. Expect
-            practical tips, best practices, digests of our blog posts, and advanced
-            warning for when our team will be attending or presenting at usergroups
-            and conferences. We will also occasionally announce updates to our open
-            source projects along with tips on how you can leverage them for your
-            own business!
-        </p>
-
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-            <form action="http://dflydev.us3.list-manage.com/subscribe/post?u=cdad0534e7ee9275612755f13&amp;id=a9de05849b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" role="form" novalidate>
-                <div class="mc-field-group form-group">
-                    <label for="mce-EMAIL" class="sr-only control-label">Email Address</label>
-                    <div>
-                        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email address">
-                        <span class="help-block">This field is required.</span>
-                    </div>
-                </div>
-                <div class="mc-field-group form-group">
-                    <label for="mce-FNAME" class="sr-only control-label">First Name</label>
-                    <div>
-                        <input type="text" value="" name="FNAME" class="  form-control" id="mce-FNAME" placeholder="First name">
-                    </div>
-                </div>
-                <div class="mc-field-group form-group">
-                    <label for="mce-LNAME" class="sr-only control-label">Last Name</label>
-                    <div>
-                        <input type="text" value="" name="LNAME" class="  form-control" id="mce-LNAME" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="mc-field-group form-group">
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_cdad0534e7ee9275612755f13_a9de05849b" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg"></div>
-                </div>
-            </form>
-        </div>
-        <!--End mc_embed_signup-->
-    </div>
-</div>
-
-<br><br><br>
-
-{% endblock %}
+    </body>
+</html>
