@@ -19,6 +19,30 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <link href="{{ site.url }}/assets/css/style.css?v={{ site.assets_version }}" rel="stylesheet" media="screen">
     <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Start of Async Drift Code -->
+    <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('hp7mx95ztgx8');
+    </script>
+    <!-- End of Async Drift Code -->
 </head>
 {% if not artwork %}{% if page.artwork %}{% set artwork = page.artwork %}{% else %}{% set artwork = site.default_artwork %}{% endif %}{% endif %}
 <body class="{% if page.nav %}page-nav-{{ page.nav }}{% else %}page-nav-none{% endif %} {% if artwork %}page-artwork-{{ artwork }}{% else %}page-artwork-none{% endif %}">
